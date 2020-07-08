@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title> Prototype to HTML and CSS</title>
+</head>
+<body>
+    <nav id="overlay">
+        <img src="./images/Close.svg" alt="close" class="close" id="close-menu">
+
+        <ul>
+            <li>
+                <a href="#"> Home </a>
+
+                <span>
+                    Lorem ipsum dolor sit amet.
+                </span>
+            </li>
+            <li>
+                <a href="#"> About Us </a>
+
+                <span>
+                    Lorem ipsum dolor sit amet.
+                </span>
+            </li>
+            <li>
+                <a href="#"> Services </a>
+
+                <span>
+                    Lorem ipsum dolor sit amet.
+                </span>
+            </li>
+            <li>
+                <a href="#"> Contact </a>
+
+                <span>
+                    Lorem ipsum dolor sit amet.
+                </span>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="#" class="logo"> mysite </a>
+
+        <img src="./images/Menu.svg" alt="menu" class="menu" id="menu-btn">
+    </header>
+
+    <section>
+        <h1>
+            this is fancy
+        </h1>
+    </section>
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('menu-btn').addEventListener('click' , function() {
+            overlay.classList.add('show-menu');
+        }); 
+        document.getElementById('close-menu').addEventListener('click' , function() {
+            overlay.classList.remove('show-menu');
+        }); 
+    </script>
+
+</body>
+</html>
